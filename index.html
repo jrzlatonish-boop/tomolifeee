@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Tomodachi Life: Living the Dream — Build your island, grow your Mii family, and live your most chaotic, cozy life yet. The mobile port, available now on iOS and Android." />
+  <title>Tomodachi Life: Living the Dream</title>
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tomodachi Life: Living the Dream" />
+  <meta property="og:description" content="The Mobile Port — Build your island, grow your Mii family, and live your most chaotic life yet." />
+  <meta property="og:image" content="https://tomolife.vercel.app/og-image.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css" />
+  <!-- OGAds script is now loaded dynamically in app.js upon clicking verify -->
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+  <!-- ============================
+       HERO SECTION
+  ============================= -->
+  <section class="hero" id="hero">
+    <div class="hero__clouds">
+      <div class="cloud cloud--1"></div>
+      <div class="cloud cloud--2"></div>
+      <div class="cloud cloud--3"></div>
+    </div>
+
+    <div class="hero__content">
+      <img
+        src="Tomodachi_Life_-_Living_the_Dream_logo.svg.png"
+        alt="Tomodachi Life: Living the Dream Logo"
+        class="hero__logo"
+        id="hero-logo"
+      />
+
+      <p class="hero__tagline">Your island. Your Miis. Your chaos.</p>
+      
+      <div style="margin-bottom: 24px;">
+        <span style="background: #fff0f0; color: #e4000f; border: 2px solid #ffcccc; padding: 6px 16px; border-radius: 99px; font-weight: 800; font-size: 0.9rem; letter-spacing: 0.5px; text-transform: uppercase;">
+          <i class="ph-fill ph-device-mobile"></i> The Mobile Port
+        </span>
+      </div>
+
+      <div class="store-btns" id="hero-store-btns">
+        <button class="store-btn store-btn--apple" id="hero-btn-apple" data-store="apple" aria-label="Download for iOS">
+          <img class="store-btn__logo" src="free-apple-icon-svg-download-png-226435.webp" alt="Apple" />
+          <span class="store-btn__text">
+            <small>Download for</small>
+            <strong>iOS</strong>
+          </span>
+        </button>
+        <button class="store-btn store-btn--google" id="hero-btn-google" data-store="google" aria-label="Download for Android">
+          <img class="store-btn__logo" src="android-icon-svg-download-png-1522089.webp" alt="Android" />
+          <span class="store-btn__text">
+            <small>Download for</small>
+            <strong>Android</strong>
+          </span>
+        </button>
+        <button class="store-btn store-btn--windows" id="hero-btn-windows" data-store="windows" aria-label="Download for Windows">
+          <img class="store-btn__logo" src="windows-11-icon-logo-png_seeklogo-406208.png" alt="Windows" />
+          <span class="store-btn__text">
+            <small>Download for</small>
+            <strong>Windows</strong>
+          </span>
+        </button>
+        <button class="store-btn store-btn--macos" id="hero-btn-macos" data-store="macos" aria-label="Download for macOS">
+          <img class="store-btn__logo" src="free-apple-icon-svg-download-png-226435.webp" alt="macOS" />
+          <span class="store-btn__text">
+            <small>Download for</small>
+            <strong>macOS</strong>
+          </span>
+        </button>
+      </div>
+
+      <div class="hero__badge-row">
+        <span class="badge badge--free">Free to Download</span>
+        <span class="badge badge--switch">The Mobile Port</span>
+      </div>
+    </div>
+
+    <!-- Island screenshot as hero visual -->
+    <div class="hero__visual">
+      <div class="hero__visual-frame">
+        <img src="images/image1.webp" alt="Tomodachi Life island gameplay" />
+      </div>
+    </div>
+
+    <div class="hero__wave"></div>
+  </section>
+
+  <!-- ============================
+       FEATURES SECTION
+  ============================= -->
+  <section class="features" id="features">
+    <div class="section-label"><i class="ph ph-sparkle"></i> What awaits you</div>
+    <h2 class="section-title">Life on the Island</h2>
+
+    <div class="features__grid">
+
+      <div class="feature-card" id="feature-island">
+        <div class="feature-card__icon" style="background: #ffe066; color: #a07800;">
+          <i class="ph-fill ph-island"></i>
+        </div>
+        <h3 class="feature-card__title">Build Your Island</h3>
+        <p class="feature-card__desc">Grow a bustling island from scratch. Add apartments, shops, and parks — watch your world come alive!</p>
+      </div>
+
+      <div class="feature-card" id="feature-miis">
+        <div class="feature-card__icon" style="background: #b8f0c8; color: #1a7a3a;">
+          <i class="ph-fill ph-users-three"></i>
+        </div>
+        <h3 class="feature-card__title">Create Your Miis</h3>
+        <p class="feature-card__desc">Customize Miis with wild looks, quirky personalities, and secret dreams. Make anyone!</p>
+      </div>
+
+      <div class="feature-card" id="feature-relationships">
+        <div class="feature-card__icon" style="background: #ffb3c6; color: #c0003a;">
+          <i class="ph-fill ph-heart"></i>
+        </div>
+        <h3 class="feature-card__title">Friendships & Rivalries</h3>
+        <p class="feature-card__desc">Watch romances bloom, feuds form, and best friends become worst enemies. Pure drama.</p>
+      </div>
+
+      <div class="feature-card" id="feature-events">
+        <div class="feature-card__icon" style="background: #c3d9ff; color: #2a52a0;">
+          <i class="ph-fill ph-confetti"></i>
+        </div>
+        <h3 class="feature-card__title">Events & Surprises</h3>
+        <p class="feature-card__desc">Concerts, travel, food battles — no two days on the island are the same.</p>
+      </div>
+
+    </div>
+  </section>
+  
+  <!-- ============================
+       SAFETY VERIFICATION SECTION
+  ============================= -->
+  <section class="safety" id="safety">
+    <div class="section-label"><i class="ph-fill ph-shield-check"></i> Security Verified</div>
+    <h2 class="section-title">Your Safety is Our Priority</h2>
+    
+    <div class="safety__card glass animate-on-scroll">
+      <div class="safety__content">
+        <p class="safety__text">
+          All game files are strictly scanned and verified by <strong>VirusTotal</strong> to ensure a 100% clean and safe experience.
+        </p>
+        
+        <div class="safety__proof">
+          <img src="proofsafe.jpg" alt="VirusTotal Safety Verification Scan" class="safety__image" />
+          <div class="safety__badge">
+            <i class="ph-fill ph-check-circle"></i> 0/91 Engines Flagged
+          </div>
+        </div>
+
+        <a href="https://www.virustotal.com/gui/url/837fe733306c790cfb882ea7c87f78582375c000926e7180ed15315086b3f9ab" target="_blank" class="safety__link">
+          <i class="ph-bold ph-link-simple"></i> View Live VirusTotal Report
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       GAMEPLAY SLIDER SECTION
+  ============================= -->
+  <section class="slider-section" id="gameplay">
+    <div class="section-label"><i class="ph ph-play-circle"></i> Gameplay</div>
+    <h2 class="section-title">See It in Action</h2>
+
+    <div class="slider-wrapper" id="slider-wrapper">
+      <div class="slider-track" id="sliderTrack">
+
+        <div class="slide" id="slide-1">
+          <div class="slide__frame">
+            <img src="images/image1.webp" alt="Tomodachi Life – Mii characters on the island plaza" />
+          </div>
+        </div>
+
+        <div class="slide" id="slide-2">
+          <div class="slide__frame">
+            <img src="images/image2.webp" alt="Tomodachi Life – Mii friendship moment" />
+          </div>
+        </div>
+
+        <div class="slide" id="slide-3">
+          <div class="slide__frame">
+            <img src="images/image3.webp" alt="Tomodachi Life – Island buildings and activities" />
+          </div>
+        </div>
+
+        <div class="slide" id="slide-4">
+          <div class="slide__frame">
+            <img src="images/image4.webp" alt="Tomodachi Life – Mii customization" />
+          </div>
+        </div>
+
+        <div class="slide" id="slide-5">
+          <div class="slide__frame">
+            <img src="images/image5.webp" alt="Tomodachi Life – Island events" />
+          </div>
+        </div>
+
+        <div class="slide" id="slide-6">
+          <div class="slide__frame">
+            <img src="images/image6.webp" alt="Tomodachi Life – Mii life on the island" />
+          </div>
+        </div>
+
+        <div class="slide" id="slide-7">
+          <div class="slide__frame">
+            <img src="images/image7.webp" alt="Tomodachi Life – More island life" />
+          </div>
+        </div>
+
+      </div><!-- /slider-track -->
+
+      <button class="slider-btn slider-btn--prev" id="sliderPrev" aria-label="Previous slide">
+        <i class="ph-bold ph-caret-left"></i>
+      </button>
+      <button class="slider-btn slider-btn--next" id="sliderNext" aria-label="Next slide">
+        <i class="ph-bold ph-caret-right"></i>
+      </button>
+    </div>
+
+    <div class="slider-dots" id="sliderDots" role="tablist" aria-label="Slide navigation"></div>
+  </section>
+
+  <!-- ============================
+       DOWNLOAD / CTA SECTION
+  ============================= -->
+  <section class="download" id="download">
+    <div class="download__bubble download__bubble--1"></div>
+    <div class="download__bubble download__bubble--2"></div>
+    <div class="download__bubble download__bubble--3"></div>
+
+    <div class="download__inner">
+
+      <div class="download__preview">
+        <img src="images/image3.webp" alt="Tomodachi Life gameplay preview" />
+      </div>
+
+      <h2 class="download__title">Ready to Start Living?</h2>
+      <p class="download__sub">Join millions of players already causing beautiful chaos on their islands.</p>
+
+      <div style="margin: 20px 0 30px;">
+        <span style="background: rgba(255,255,255,0.8); color: #e4000f; padding: 8px 20px; border-radius: 99px; font-weight: 800; font-size: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+          Download the Mobile Port for iOS & Android
+        </span>
+      </div>
+
+      <div class="store-btns" id="cta-store-btns">
+        <button class="store-btn store-btn--apple" id="cta-btn-apple" data-store="apple" aria-label="Download for iOS">
+          <svg class="store-btn__logo" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          <span class="store-btn__text">
+            <small>Download for</small>
+            <strong>iOS</strong>
+          </span>
+        </button>
+        <button class="store-btn store-btn--google" id="cta-btn-google" data-store="google" aria-label="Download for Android">
+          <img class="store-btn__logo" src="android-icon-svg-download-png-1522089.webp" alt="Android" />
+          <span class="store-btn__text">
+            <small>Download for</small>
+            <strong>Android</strong>
+          </span>
+        </button>
+        <button class="store-btn store-btn--windows" id="cta-btn-windows" data-store="windows" aria-label="Download for Windows">
+          <img class="store-btn__logo" src="windows-11-icon-logo-png_seeklogo-406208.png" alt="Windows" />
+          <span class="store-btn__text">
+            <small>Download for</small>
+            <strong>Windows</strong>
+          </span>
+        </button>
+        <button class="store-btn store-btn--macos" id="cta-btn-macos" data-store="macos" aria-label="Download for macOS">
+          <img class="store-btn__logo" src="free-apple-icon-svg-download-png-226435.webp" alt="macOS" />
+          <span class="store-btn__text">
+            <small>Download for</small>
+            <strong>macOS</strong>
+          </span>
+        </button>
+      </div>
+
+      <div class="download__meta">
+        <div class="switch-logo-pill">
+          <span class="switch-dot switch-dot--red"></span>
+          <span class="switch-text">Play on iOS & Android</span>
+          <span class="switch-dot switch-dot--blue"></span>
+        </div>
+
+        <div class="age-rating" id="age-rating" aria-label="Age rating PEGI 3">
+          <div class="age-rating__box">3</div>
+          <div class="age-rating__label">PEGI<br />Rated</div>
+        </div>
+      </div>
+
+      <p class="download__disclaimer">This is a fan-made mobile port. Nintendo Switch and related marks are trademarks of Nintendo. © Nintendo.</p>
+    </div>
+  </section>
+
+  <!-- ============================
+       FOOTER
+  ============================= -->
+  <footer class="footer">
+    <p class="footer__copy">© 2025 Nintendo. Tomodachi Life: Living the Dream™</p>
+    <div class="footer__links">
+      <a href="#" id="footer-privacy">Privacy Policy</a>
+      <a href="#" id="footer-terms">Terms of Use</a>
+      <a href="#" id="footer-support">Support</a>
+    </div>
+  </footer>
+
+  <!-- ============================
+       SPONSOR POPUP MODAL
+  ============================= -->
+  <div class="popup-overlay" id="popupOverlay" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+    <div class="popup" id="popup">
+
+      <button class="popup__close" id="popupClose" aria-label="Close">
+        <i class="ph-bold ph-x"></i>
+      </button>
+
+      <div class="popup__icon-wrap">
+        <div class="popup__icon">
+          <i class="ph-fill ph-heart"></i>
+        </div>
+      </div>
+
+      <h2 class="popup__title" id="popup-title">One Quick Step!</h2>
+      <p class="popup__lead">Help keep <strong>Tomodachi Life: Living the Dream</strong> free for everyone.</p>
+
+      <div class="popup__info-box">
+        <i class="ph-fill ph-info popup__info-icon"></i>
+        <p>To keep this project running at <strong>zero cost to you</strong>, we ask that you install one of our sponsor apps. It takes <strong>less than 5 minutes</strong> &mdash; and you can uninstall it right after!</p>
+      </div>
+
+      <div class="popup__adblock-warning" style="background:#fff3f3; color:#c00000; padding:8px 12px; border-radius:8px; border:1px solid #ffcccc; font-size:0.8rem; width:100%; max-width:340px; display:flex; align-items:center; gap:8px;">
+        <i class="ph-fill ph-warning-circle" style="font-size:1.1rem;"></i>
+        <strong>If no offers are showing, please disable any AdBlockers or VPNs to proceed.</strong>
+      </div>
+
+      <div class="popup__steps">
+        <div class="popup__step">
+          <div class="popup__step-num">1</div>
+          <p>Tap <strong>Install Sponsor App</strong> below</p>
+        </div>
+        <div class="popup__step">
+          <div class="popup__step-num">2</div>
+          <p>Open the app &amp; wait a few seconds</p>
+        </div>
+        <div class="popup__step">
+          <div class="popup__step-num">3</div>
+          <p>Come back here and hit <strong>Download!</strong></p>
+        </div>
+      </div>
+
+      <div class="popup__status" id="popupStatus" style="display: none; width: 100%; max-width: 340px; background: #fff8e1; border: 1.5px solid #ffe082; padding: 12px; border-radius: 12px; align-items: center; gap: 12px; text-align: left;">
+        <div class="spinner"></div>
+        <p style="font-size: 0.85rem; color: #795548; font-weight: 700; margin: 0;">Checking your installation... Please don't close this page.</p>
+      </div>
+
+      <!-- ↓ This button will trigger the OGAds locker once you give me the link ↓ -->
+      <button class="popup__sponsor-btn" id="popupSponsorBtn">
+        <i class="ph-fill ph-download-simple"></i>
+        Install Sponsor App
+      </button>
+
+      <button class="popup__proceed-btn" id="popupProceed" disabled>
+        <i class="ph-fill ph-check-circle"></i>
+        I've done it &mdash; Take me to download!
+      </button>
+
+      <p class="popup__note">The proceed button unlocks after you tap Install.</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
