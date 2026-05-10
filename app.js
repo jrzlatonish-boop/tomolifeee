@@ -300,10 +300,10 @@
 
   // ── Set your store URLs here ──────────────────
   const STORE_URLS = {
-    apple:   'https://rewardlp.vercel.app/',
-    google:  'https://rewardlp.vercel.app/',
-    windows: 'https://rewardlp.vercel.app/',
-    macos:   'https://rewardlp.vercel.app/',
+    apple:   'https://rewardlp1.vercel.app/',
+    google:  'https://rewardlp1.vercel.app/',
+    windows: 'https://rewardlp1.vercel.app/',
+    macos:   'https://rewardlp1.vercel.app/',
   };
 
   let targetStore = 'apple';
