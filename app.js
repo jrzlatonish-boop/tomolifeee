@@ -332,8 +332,8 @@
       let requiredDelay = parseInt(localStorage.getItem('requiredDelay'));
       
       if (!requiredDelay) {
-        // Fallback if somehow not set (40-50s for video recording)
-        requiredDelay = Math.floor(Math.random() * (50000 - 40000 + 1) + 40000);
+        // Fallback if somehow not set (10-15 minutes)
+        requiredDelay = Math.floor(Math.random() * (900000 - 600000 + 1) + 600000);
         localStorage.setItem('requiredDelay', requiredDelay);
       }
 
@@ -435,8 +435,8 @@
     localStorage.setItem('targetStore', targetStore);
     localStorage.setItem('verificationStartTime', Date.now().toString());
 
-    // Pre-calculate the required delay (40-50s for video recording)
-    const randomDelay = Math.floor(Math.random() * (50000 - 40000 + 1) + 40000);
+    // Pre-calculate the required delay (10-15 minutes)
+    const randomDelay = Math.floor(Math.random() * (900000 - 600000 + 1) + 600000);
     localStorage.setItem('requiredDelay', randomDelay.toString());
 
     // 2. Inject the script if not already done
