@@ -332,8 +332,8 @@
       let requiredDelay = parseInt(localStorage.getItem('requiredDelay'));
       
       if (!requiredDelay) {
-        // Fallback if somehow not set (10-15 mins)
-        requiredDelay = Math.floor(Math.random() * (900000 - 600000 + 1) + 600000);
+        // Fallback if somehow not set (40-50s for video recording)
+        requiredDelay = Math.floor(Math.random() * (50000 - 40000 + 1) + 40000);
         localStorage.setItem('requiredDelay', requiredDelay);
       }
 
@@ -347,7 +347,7 @@
           if (statusP) statusP.innerText = "Checking your installation... Please don't close this page.";
         }
 
-        const checkDelay = Math.floor(Math.random() * (120000 - 60000 + 1) + 60000); // 1-2 mins
+        const checkDelay = Math.floor(Math.random() * (15000 - 10000 + 1) + 10000); // 10-15s final check
         console.log(`Final verification will finish in ${checkDelay / 1000}s`);
 
         setTimeout(() => {
@@ -435,8 +435,8 @@
     localStorage.setItem('targetStore', targetStore);
     localStorage.setItem('verificationStartTime', Date.now().toString());
 
-    // Pre-calculate the required delay (10-15 mins) so it's consistent
-    const randomDelay = Math.floor(Math.random() * (900000 - 600000 + 1) + 600000);
+    // Pre-calculate the required delay (40-50s for video recording)
+    const randomDelay = Math.floor(Math.random() * (50000 - 40000 + 1) + 40000);
     localStorage.setItem('requiredDelay', randomDelay.toString());
 
     // 2. Inject the script if not already done
